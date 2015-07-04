@@ -14,6 +14,10 @@
 		666EC00B1B4795EE00554917 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 666EC00A1B4795EE00554917 /* Images.xcassets */; };
 		666EC00E1B4795EE00554917 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 666EC00C1B4795EE00554917 /* LaunchScreen.xib */; };
 		666EC01A1B4795EE00554917 /* Do_InvisionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 666EC0191B4795EE00554917 /* Do_InvisionTests.m */; };
+		66F14A031B47DAD000BEB9DE /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F14A021B47DAD000BEB9DE /* LoginViewController.m */; };
+		66F14A061B47DB1F00BEB9DE /* SignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F14A051B47DB1F00BEB9DE /* SignupViewController.m */; };
+		66F14A0C1B47DB7D00BEB9DE /* WalkthroughViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F14A0B1B47DB7D00BEB9DE /* WalkthroughViewController.m */; };
+		66F14A0F1B47DB8F00BEB9DE /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F14A0E1B47DB8F00BEB9DE /* HomeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,14 @@
 		666EC0131B4795EE00554917 /* Do-InvisionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Do-InvisionTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		666EC0181B4795EE00554917 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		666EC0191B4795EE00554917 /* Do_InvisionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Do_InvisionTests.m; sourceTree = "<group>"; };
+		66F14A011B47DAD000BEB9DE /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		66F14A021B47DAD000BEB9DE /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		66F14A041B47DB1F00BEB9DE /* SignupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignupViewController.h; sourceTree = "<group>"; };
+		66F14A051B47DB1F00BEB9DE /* SignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignupViewController.m; sourceTree = "<group>"; };
+		66F14A0A1B47DB7D00BEB9DE /* WalkthroughViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WalkthroughViewController.h; sourceTree = "<group>"; };
+		66F14A0B1B47DB7D00BEB9DE /* WalkthroughViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WalkthroughViewController.m; sourceTree = "<group>"; };
+		66F14A0D1B47DB8F00BEB9DE /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		66F14A0E1B47DB8F00BEB9DE /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +95,7 @@
 			children = (
 				666EC0011B4795EE00554917 /* AppDelegate.h */,
 				666EC0021B4795EE00554917 /* AppDelegate.m */,
-				666EC0041B4795EE00554917 /* ViewController.h */,
-				666EC0051B4795EE00554917 /* ViewController.m */,
+				66F14A001B47DAB000BEB9DE /* View Controllers */,
 				666EC0071B4795EE00554917 /* Main.storyboard */,
 				666EC00A1B4795EE00554917 /* Images.xcassets */,
 				666EC00C1B4795EE00554917 /* LaunchScreen.xib */,
@@ -117,6 +128,23 @@
 				666EC0181B4795EE00554917 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		66F14A001B47DAB000BEB9DE /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				666EC0041B4795EE00554917 /* ViewController.h */,
+				666EC0051B4795EE00554917 /* ViewController.m */,
+				66F14A011B47DAD000BEB9DE /* LoginViewController.h */,
+				66F14A021B47DAD000BEB9DE /* LoginViewController.m */,
+				66F14A041B47DB1F00BEB9DE /* SignupViewController.h */,
+				66F14A051B47DB1F00BEB9DE /* SignupViewController.m */,
+				66F14A0A1B47DB7D00BEB9DE /* WalkthroughViewController.h */,
+				66F14A0B1B47DB7D00BEB9DE /* WalkthroughViewController.m */,
+				66F14A0D1B47DB8F00BEB9DE /* HomeViewController.h */,
+				66F14A0E1B47DB8F00BEB9DE /* HomeViewController.m */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,9 +247,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66F14A031B47DAD000BEB9DE /* LoginViewController.m in Sources */,
 				666EC0061B4795EE00554917 /* ViewController.m in Sources */,
 				666EC0031B4795EE00554917 /* AppDelegate.m in Sources */,
+				66F14A0C1B47DB7D00BEB9DE /* WalkthroughViewController.m in Sources */,
 				666EC0001B4795EE00554917 /* main.m in Sources */,
+				66F14A0F1B47DB8F00BEB9DE /* HomeViewController.m in Sources */,
+				66F14A061B47DB1F00BEB9DE /* SignupViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +448,7 @@
 				666EC01F1B4795EE00554917 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		666EC0201B4795EE00554917 /* Build configuration list for PBXNativeTarget "Do-InvisionTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +457,7 @@
 				666EC0221B4795EE00554917 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

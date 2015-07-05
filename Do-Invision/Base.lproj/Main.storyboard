@@ -187,23 +187,25 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MRA-Xl-1Kj">
-                                <rect key="frame" x="187" y="561" width="227" height="11"/>
+                                <rect key="frame" x="165" y="561" width="270" height="11"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="11" id="746-vN-76r"/>
-                                    <constraint firstAttribute="width" constant="227" id="zRV-KZ-oVm"/>
+                                    <constraint firstAttribute="width" constant="270" id="zRV-KZ-oVm"/>
                                 </constraints>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
-                                        <fragment content="DON'T HAVE AN ACCOUNT?  ">
+                                        <fragment content="ALREADY HAVE AN ACCOUNT?  ">
                                             <attributes>
                                                 <color key="NSColor" red="0.6588235294117647" green="0.6588235294117647" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
                                                 <font key="NSFont" size="11" name="HelveticaNeue-Light"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                                             </attributes>
                                         </fragment>
-                                        <fragment content="SIGN UP">
+                                        <fragment content="SIGN IN">
                                             <attributes>
                                                 <color key="NSColor" red="0.11372549019607843" green="0.11372549019607843" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
                                                 <font key="NSFont" size="11" name="HelveticaNeue-Light"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>

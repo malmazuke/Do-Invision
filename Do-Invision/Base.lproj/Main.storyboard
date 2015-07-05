@@ -391,7 +391,6 @@
                             <constraint firstItem="l0G-3a-30Y" firstAttribute="leading" secondItem="7ar-l6-Z54" secondAttribute="leadingMargin" constant="14" id="nXx-m1-1FN"/>
                             <constraint firstItem="KgN-yU-MmM" firstAttribute="leading" secondItem="7ar-l6-Z54" secondAttribute="leadingMargin" constant="14" id="ndP-Zr-DPM"/>
                             <constraint firstItem="pfQ-7k-ef5" firstAttribute="top" secondItem="CMC-Fg-ahR" secondAttribute="bottom" constant="20" id="o4h-rH-7Bi"/>
-                            <constraint firstItem="UQw-W4-LVG" firstAttribute="top" secondItem="7ar-l6-Z54" secondAttribute="topMargin" id="ro2-IF-K3q"/>
                             <constraint firstAttribute="trailingMargin" secondItem="KgN-yU-MmM" secondAttribute="trailing" constant="14" id="sA4-jj-6qR"/>
                             <constraint firstItem="KgN-yU-MmM" firstAttribute="top" secondItem="rZs-lc-FJa" secondAttribute="bottom" constant="6" id="t6v-Dg-oPB"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Zhg-xi-4Dj" secondAttribute="trailing" constant="14" id="uMu-Y6-X53"/>
@@ -402,11 +401,6 @@
                             <constraint firstAttribute="trailingMargin" secondItem="Xwf-5g-KeQ" secondAttribute="trailing" constant="14" id="z5I-pc-geV"/>
                             <constraint firstItem="4vQ-bG-ZzL" firstAttribute="leading" secondItem="7ar-l6-Z54" secondAttribute="leadingMargin" constant="14" id="zUY-c2-prp"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="ro2-IF-K3q"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="Lf0-5G-Ke0"/>
                 </viewController>

@@ -174,10 +174,10 @@
             </objects>
             <point key="canvasLocation" x="1081" y="375"/>
         </scene>
-        <!--Login View Controller-->
+        <!--Sign up-->
         <scene sceneID="XIt-AC-mmg">
             <objects>
-                <viewController id="WwV-GQ-UeK" customClass="LoginViewController" sceneMemberID="viewController">
+                <viewController title="Sign up" id="WwV-GQ-UeK" customClass="LoginViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="axW-hJ-LH3"/>
                         <viewControllerLayoutGuide type="bottom" id="sbO-ef-C7e"/>
@@ -325,6 +325,35 @@
                                 <color key="textColor" red="0.6588235294" green="0.6588235294" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UQw-W4-LVG">
+                                <rect key="frame" x="30" y="64" width="540" height="92"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EhM-GT-Buu">
+                                        <rect key="frame" x="220" y="-4" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="3uF-rc-z2f"/>
+                                            <constraint firstAttribute="height" constant="100" id="pdI-c5-C3G"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="avatar">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconAddPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="Ylr-EV-azG">
+                                        <rect key="frame" x="290" y="-4" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="OoG-gq-eME"/>
+                                            <constraint firstAttribute="height" constant="30" id="RTt-L7-fJt"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="centerX" secondItem="EhM-GT-Buu" secondAttribute="centerX" id="9hq-qs-ebI"/>
+                                    <constraint firstItem="Ylr-EV-azG" firstAttribute="leading" secondItem="EhM-GT-Buu" secondAttribute="trailing" constant="-30" id="P0e-Xu-7Y1"/>
+                                    <constraint firstItem="EhM-GT-Buu" firstAttribute="top" secondItem="Ylr-EV-azG" secondAttribute="bottom" constant="-30" id="UHy-vn-bEC"/>
+                                    <constraint firstAttribute="centerY" secondItem="EhM-GT-Buu" secondAttribute="centerY" id="wmk-Vf-ysE"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -332,15 +361,18 @@
                             <constraint firstAttribute="trailing" secondItem="zGc-cR-fzP" secondAttribute="trailing" constant="30" id="1Tz-pa-KTo"/>
                             <constraint firstAttribute="trailingMargin" secondItem="S2r-eD-EcT" secondAttribute="trailing" constant="14" id="1dc-G5-yeb"/>
                             <constraint firstItem="Zhg-xi-4Dj" firstAttribute="leading" secondItem="7ar-l6-Z54" secondAttribute="leadingMargin" constant="14" id="274-vW-ZG0"/>
+                            <constraint firstItem="l0G-3a-30Y" firstAttribute="top" secondItem="UQw-W4-LVG" secondAttribute="bottom" id="CFi-LX-M9B"/>
                             <constraint firstAttribute="centerX" secondItem="MRA-Xl-1Kj" secondAttribute="centerX" id="Cng-g4-Po6"/>
                             <constraint firstItem="660-xH-kbZ" firstAttribute="top" secondItem="IPf-uf-jjo" secondAttribute="bottom" constant="6" id="CpC-0w-cVu"/>
                             <constraint firstItem="sbO-ef-C7e" firstAttribute="top" secondItem="MRA-Xl-1Kj" secondAttribute="bottom" constant="28" id="Ebi-BN-xwT"/>
                             <constraint firstItem="rZs-lc-FJa" firstAttribute="leading" secondItem="7ar-l6-Z54" secondAttribute="leadingMargin" constant="14" id="Etc-Bn-7zF"/>
                             <constraint firstItem="S2r-eD-EcT" firstAttribute="top" secondItem="660-xH-kbZ" secondAttribute="bottom" constant="8" id="EzC-jC-0RB"/>
                             <constraint firstItem="Xwf-5g-KeQ" firstAttribute="top" secondItem="KgN-yU-MmM" secondAttribute="bottom" constant="8" id="GhP-y0-hud"/>
+                            <constraint firstItem="UQw-W4-LVG" firstAttribute="leading" secondItem="7ar-l6-Z54" secondAttribute="leadingMargin" constant="14" id="Grd-Tu-Y6c"/>
                             <constraint firstAttribute="trailingMargin" secondItem="CMC-Fg-ahR" secondAttribute="trailing" constant="14" id="JVM-iP-M5F"/>
                             <constraint firstItem="Xwf-5g-KeQ" firstAttribute="leading" secondItem="7ar-l6-Z54" secondAttribute="leadingMargin" constant="14" id="K5s-Fs-83p"/>
                             <constraint firstItem="4vQ-bG-ZzL" firstAttribute="top" secondItem="Zhg-xi-4Dj" secondAttribute="bottom" constant="8" id="Ne6-IS-0Kf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="UQw-W4-LVG" secondAttribute="trailing" constant="14" id="NsQ-59-JP4"/>
                             <constraint firstItem="S2r-eD-EcT" firstAttribute="leading" secondItem="7ar-l6-Z54" secondAttribute="leadingMargin" constant="14" id="OxX-ia-Ycm"/>
                             <constraint firstItem="pfQ-7k-ef5" firstAttribute="leading" secondItem="7ar-l6-Z54" secondAttribute="leadingMargin" constant="14" id="SVr-je-63e"/>
                             <constraint firstItem="CMC-Fg-ahR" firstAttribute="leading" secondItem="7ar-l6-Z54" secondAttribute="leadingMargin" constant="14" id="XC5-nW-N2K"/>
@@ -351,11 +383,13 @@
                             <constraint firstItem="IPf-uf-jjo" firstAttribute="top" secondItem="4vQ-bG-ZzL" secondAttribute="bottom" constant="20" id="gvT-Oq-Hfy"/>
                             <constraint firstItem="CMC-Fg-ahR" firstAttribute="top" secondItem="Zvz-o6-CEv" secondAttribute="bottom" constant="8" id="hR6-gn-9Yz"/>
                             <constraint firstAttribute="trailingMargin" secondItem="4vQ-bG-ZzL" secondAttribute="trailing" constant="14" id="iEr-2s-7p2"/>
+                            <constraint firstItem="UQw-W4-LVG" firstAttribute="top" secondItem="axW-hJ-LH3" secondAttribute="bottom" id="kVM-GJ-K0X"/>
                             <constraint firstItem="zGc-cR-fzP" firstAttribute="top" secondItem="Xwf-5g-KeQ" secondAttribute="bottom" constant="45" id="l1B-0f-wFk"/>
                             <constraint firstItem="IPf-uf-jjo" firstAttribute="leading" secondItem="7ar-l6-Z54" secondAttribute="leadingMargin" constant="14" id="ln2-TV-ow0"/>
                             <constraint firstItem="l0G-3a-30Y" firstAttribute="leading" secondItem="7ar-l6-Z54" secondAttribute="leadingMargin" constant="14" id="nXx-m1-1FN"/>
                             <constraint firstItem="KgN-yU-MmM" firstAttribute="leading" secondItem="7ar-l6-Z54" secondAttribute="leadingMargin" constant="14" id="ndP-Zr-DPM"/>
                             <constraint firstItem="pfQ-7k-ef5" firstAttribute="top" secondItem="CMC-Fg-ahR" secondAttribute="bottom" constant="20" id="o4h-rH-7Bi"/>
+                            <constraint firstItem="UQw-W4-LVG" firstAttribute="top" secondItem="7ar-l6-Z54" secondAttribute="topMargin" id="ro2-IF-K3q"/>
                             <constraint firstAttribute="trailingMargin" secondItem="KgN-yU-MmM" secondAttribute="trailing" constant="14" id="sA4-jj-6qR"/>
                             <constraint firstItem="KgN-yU-MmM" firstAttribute="top" secondItem="rZs-lc-FJa" secondAttribute="bottom" constant="6" id="t6v-Dg-oPB"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Zhg-xi-4Dj" secondAttribute="trailing" constant="14" id="uMu-Y6-X53"/>
@@ -366,6 +400,11 @@
                             <constraint firstAttribute="trailingMargin" secondItem="Xwf-5g-KeQ" secondAttribute="trailing" constant="14" id="z5I-pc-geV"/>
                             <constraint firstItem="4vQ-bG-ZzL" firstAttribute="leading" secondItem="7ar-l6-Z54" secondAttribute="leadingMargin" constant="14" id="zUY-c2-prp"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ro2-IF-K3q"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="Lf0-5G-Ke0"/>
                 </viewController>
@@ -411,6 +450,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="avatar" width="66" height="66"/>
         <image name="icon-DoLogoTeal" width="301" height="234"/>
+        <image name="iconAddPhoto" width="20" height="20"/>
     </resources>
 </document>
